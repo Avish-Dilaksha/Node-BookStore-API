@@ -1,0 +1,1 @@
+In this project my aim is to create a node.js backend web application for a book store web page.
