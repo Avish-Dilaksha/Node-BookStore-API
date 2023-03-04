@@ -5,10 +5,13 @@ const express = require('express')
 const app = express()
 
 const connectDB = require('./db/connect')
+const books = require('./routes/books')
 
 const port = process.env.PORT || 3000
 
 app.use(express.json())
+
+app.use('/api/v1/books', books)
 
 // app.get('/', (req,res) => {
 //     res.send('Hello world!')
